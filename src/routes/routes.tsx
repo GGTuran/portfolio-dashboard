@@ -1,4 +1,8 @@
 import App from "@/App";
+import BlogContainer from "@/components/ManageBlogs/BlogContainer";
+import ExperienceContainer from "@/components/ManageExperience/ExperienceContainer";
+import ProjectContainer from "@/components/ManageProjects/ProjectContainer";
+import SkillContainer from "@/components/ManageSkills/SKillContainer";
 import AboutUs from "@/pages/AboutUs";
 import Contact from "@/pages/Contact";
 import Error from "@/pages/Error";
@@ -27,10 +31,22 @@ const router = createBrowserRouter([
         path: "/contact",
         element: <Contact></Contact>,
       },
-      // {
-      //   path: "/all-products",
-      //   element: <AllProducts></AllProducts>,
-      // },
+      {
+        path: "/projects",
+        element: <ProjectContainer></ProjectContainer>,
+      },
+      {
+        path: "/blogs",
+        element: <BlogContainer></BlogContainer>,
+      },
+      {
+        path: "/skills",
+        element: <SkillContainer></SkillContainer>,
+      },
+      {
+        path: "/experiences",
+        element: <ExperienceContainer></ExperienceContainer>,
+      },
       // {
       //   path: "/products/:productId",
       //   element: <ProductDetails></ProductDetails>,
